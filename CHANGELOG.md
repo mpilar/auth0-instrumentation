@@ -9,6 +9,15 @@
 FEATURES:
 * Underlying kinesis lib performs retries on failed calls.
 
+## v2.6.1
+
+FEATURES:
+* Changed StatsD library from `node-statsd` to `hot-shots`
+
+NOTES:
+* The new library has new DataDog specific features that can be used, also it changes multiline messages in events so that DataDog can escape them properly.
+
+
 ## v2.6.0
 
 FEATURES:
