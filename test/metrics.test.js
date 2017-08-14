@@ -52,9 +52,9 @@ describe('metrics', function() {
 
   it('should run histogram without throwing', function(done) {
     assert.doesNotThrow(function() {
-      metrics.gauge('foo.bar', 5.5);
-      metrics.gauge('foo.bar', 5.5, ['tag1:a', 'tag2:b']);
-      metrics.gauge('foo.bar', 5.5, {'tag1': 'a', 'tag2': 'b'});
+      metrics.histogram('foo.bar', 5.5);
+      metrics.histogram('foo.bar', 5.5, ['tag1:a', 'tag2:b']);
+      metrics.histogram('foo.bar', 5.5, {'tag1': 'a', 'tag2': 'b'});
     }, TypeError);
     done();
   });

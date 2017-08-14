@@ -1,0 +1,17 @@
+auth0-instrumentation:
+  image: auth0brokkr/node:4.4.3
+  volumes:
+    - ./:/app
+  environment:
+    STATSD_HOST: statsd:8125
+    METRICS_PREFIX: dockertest
+  links:
+    - statsd
+
+statsd:
+  image: hopsoft/graphite-statsd
+  expose:
+    - 80
+    - 8125/udp
+  ports:
+    - 8080:80
