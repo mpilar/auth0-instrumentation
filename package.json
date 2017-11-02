@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "auth0-instrumentation",
   "version": "2.9.1",
   "description": "Instrumentation for logs, metrics, and exceptions",
@@ -35,42 +34,3 @@
     "yargs": "^9.0.1"
   }
 }
-=======
-    "name": "auth0-instrumentation",
-    "version": "2.6.1",
-    "description": "Instrumentation for logs, metrics, and exceptions",
-    "main": "index.js",
-    "scripts": {
-        "test": "mocha",
-        "docker-up": "docker-compose up -d",
-        "docker-down": "docker-compose down",
-        "docker-test": "docker-compose run --rm auth0-instrumentation make docker-test"
-    },
-    "private": true,
-    "author": "Auth0",
-    "license": "ISC",
-    "dependencies": {
-        "auth0-common-logging": "github:auth0/auth0-common-logging#v2.16.1",
-        "aws-kinesis-writable": "~2.0.0",
-        "blocked": "^1.2.1",
-        "bunyan": "^1.8.1",
-        "bunyan-sentry-stream": "^1.0.2",
-        "datadog-metrics": "^0.3.0",
-        "gc-stats": "^1.0.2",
-        "hot-shots": "^4.5.0",
-        "lodash.debounce": "^4.0.8",
-        "moment": "^2.18.1",
-        "ms": "^2.0.0",
-        "pidusage": "^1.0.4",
-        "raven": "^0.10.0",
-        "uuid": "^3.0.1",
-        "v8-profiler": "^5.7.0"
-    },
-    "devDependencies": {
-        "mocha": "^2.4.5",
-        "nsp": "^2.5.0",
-        "mockuire": "^0.1.0",
-        "sinon": "^1.17.4"
-    }
-}
->>>>>>> [WIP] Add docker-compose to test with statsd
